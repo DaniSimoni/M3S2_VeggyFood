@@ -41,7 +41,6 @@ export const InputAreaHome = styled.div`
     width: 100vw;
     height: 20vh;
     background-color: #407345;
-    margin-top: -3.3rem;
 `
 
 export const SubTitulo = styled.h3`
