@@ -1,4 +1,4 @@
-import { FormLoginComponent } from '../../Components/Form/FormLogin/FormLoginComponent.jsx';
+import { FormLoginComponent } from '../../components/Form/FormLogin/FormLoginComponent.jsx';
 import * as Styled from './LoginPage.style.jsx';
 import { useContext, useEffect } from 'react';
 
