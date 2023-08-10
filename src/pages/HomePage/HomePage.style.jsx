@@ -3,17 +3,59 @@ import styled from 'styled-components';
 
 export const BodyHome = styled.div`
     display: flex;
-    width: 100vw;
-    height: 100vh;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
     box-sizing: border-box;
-    margin: 0;
+    margin-top: -10vh;
     padding: 0;
     background-color: white;
-    border: 3px solid red;
 `
 
 
-export const Titulo = styled.h1`
-    color: red;
+export const TituloBanner = styled.h1`
+    color: white;
+    margin: auto auto auto 5vw;
 `
 
+export const BannerArea = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 40vh;
+    background-color: #407345;
+
+`
+
+export const BannerImg = styled.img`
+    width: 60vw;
+    height: auto;
+	position: relative;
+	left: 0rem;
+	top: -0px;
+`
+
+export const InputAreaHome = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 20vh;
+    background-color: #407345;
+    margin-top: -3.3rem;
+`
+
+export const SubTitulo = styled.h3`
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem 0 2rem 10vw;
+`
+
+export const CardProdutoAreaHome = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;    
+    width: 85%;
+    height: auto;
+    background-color: white;
+    margin: 0 auto; 
+`
