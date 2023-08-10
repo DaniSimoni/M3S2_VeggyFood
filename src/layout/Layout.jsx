@@ -11,12 +11,11 @@ const render = () => {
         
         <Styled.App>
 
-
-            <Styled.MainLayout>
-
                 <Styled.HeaderLayout>
                     <HeaderComponent/>
                 </Styled.HeaderLayout>
+
+            <Styled.MainLayout>
 
                 <Styled.Content>
                     <Outlet/>

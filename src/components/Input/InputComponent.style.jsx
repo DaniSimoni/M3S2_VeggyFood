@@ -5,14 +5,15 @@ export const InputBox = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 100%;
-    margin-bottom: .8rem;
+    width: 80%;
+    margin: auto;
 `
 
 export const Label = styled.label`
-    font-size: .8rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: ${({$hasError}) => $hasError ? '#EE0808' : '#D9D9D9'};
+    margin-bottom: 1rem;
 `
 Label.propTypes = {
     $hasError: PropTypes.bool
