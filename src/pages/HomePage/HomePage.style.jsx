@@ -35,13 +35,6 @@ export const BannerImg = styled.img`
 	top: -0px;
 `
 
-export const InputAreaHome = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    width: 100vw;
-    height: 20vh;
-    background-color: #407345;
-`
 
 export const SubTitulo = styled.h3`
     display: flex;
