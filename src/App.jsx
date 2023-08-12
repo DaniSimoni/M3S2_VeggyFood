@@ -4,7 +4,9 @@ import { HomePage } from './pages/HomePage/HomePage'
 import { LoginPage } from './pages/LoginPage/LoginPage';
 import { CarrinhoPage } from './pages/CarrinhoPage/CarrinhotPage';
 import { CheckoutPage } from './pages/CheckoutPage/CheckoutPage';
-import { ErrorPage } from './pages/ErrorPage/ErrorPage.style';
+import { ErrorPage } from './pages/ErrorPage/ErrorPage';
+import { ConfirmaCompraPage } from './pages/ConfirmaCompraPage/ConfirmaCompraPage';
+
 
 function App() {
  
@@ -19,6 +21,7 @@ function App() {
             <Route path='/home' element={<HomePage/>}/>
             <Route path='/carrinho' element={<CarrinhoPage/>}/>
             <Route path='/checkout' element={<CheckoutPage/>}/>
+            <Route path='/efetuada' element={<ConfirmaCompraPage/>}/>
 
         </Route>
             <Route path='/error' element={<ErrorPage/>}/>

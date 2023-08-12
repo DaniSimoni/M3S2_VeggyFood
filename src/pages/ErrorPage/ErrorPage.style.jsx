@@ -1,15 +1,32 @@
-import * as Styled from './ErrorPage';
+import styled from 'styled-components'
 
-export const ErrorPage = () => {
+export const ContainerCheckout = styled.div`
+    width: 100%;
+    height: 100%;
+`
 
+export const ContainerImagem = styled.img`
+    display: flex;
+    width: 57vw;
+    height: 40vw;
+    margin-left: 40%;
+    margin-top: 10%;
+    position: relative;
+`
 
-    return (
+export const ErroTitulo = styled.h1`
+    display: flex;
+    font-size: 15rem;
+    position: absolute;
+    color: #0B4802;
+    margin-top: -45%;
+    margin-left: 25%;
+`
 
-        <Styled.ContainerCheckout>
-            <Styled.ContainerImagem src={'../../../public/images/imagens-principal.png'}></Styled.ContainerImagem>
-            <Styled.ErroTitulo>404</Styled.ErroTitulo>
-            <Styled.ErroParagrafo>Ops! Houve um erro...</Styled.ErroParagrafo>
-        </Styled.ContainerCheckout>
-
-    )
-}
+export const ErroParagrafo = styled.h1`
+    display: flex;
+    position: absolute;
+    color: #0B4802;
+    margin-top: -10%;
+    margin-left: 25%;
+`
