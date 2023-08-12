@@ -19,11 +19,14 @@ export const ImageBox = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0.8125rem 13.625rem 1.1875rem 0.75rem;
-    background-color: #d9d9d9;
+    box-shadow: 0px 0px 10px 0px #3c9b2e;
+    background-color: #8FBC8F;
+    
 
     img {
-        width: 31.25rem;
+        width: 45.25rem;
+        margin: 1rem auto 0;
+        filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.65));
     }
 
 `;

@@ -12,10 +12,19 @@ export const CardCheckout = () => {
         <CardProductCheckout />
         <Styled.Checkout>
           <Styled.SubTotal>Subtotal <Styled.Value>R$ 50,00</Styled.Value></Styled.SubTotal>
-          <Styled.SubTotal>Desconto <Styled.Value>R$ 10,00</Styled.Value></Styled.SubTotal>
-          <Styled.Total>TOTAL <Styled.Value>R$ 40,00</Styled.Value></Styled.Total>
-          <Styled.Button type="button">Comprar</Styled.Button>
         </Styled.Checkout>
+
+        <Styled.Checkout> 
+          <Styled.SubTotal>Desconto <Styled.Value>R$ 10,00</Styled.Value></Styled.SubTotal>
+        </Styled.Checkout>
+
+        <Styled.Checkout> 
+          <Styled.Total>TOTAL <Styled.Value>R$ 40,00</Styled.Value></Styled.Total>
+        </Styled.Checkout>   
+
+        <Styled.Checkout> 
+          <Styled.Button type="button">Comprar</Styled.Button>
+        </Styled.Checkout> 
       </Styled.CardContainer>
 
 

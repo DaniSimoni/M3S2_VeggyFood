@@ -1,5 +1,5 @@
 import * as Styled from './CardProductCheckout.style';
-import banana from '../../assets/images/banana.png';
+
 
 
 export const CardProductCheckout = () => {
@@ -8,7 +8,7 @@ export const CardProductCheckout = () => {
         <>
 
             <Styled.CardContainer>
-                <Styled.ImageContainer src={banana}></Styled.ImageContainer>
+                <Styled.ImageContainer src='https://imgur.com/07xIzNX'/>
                 <Styled.TitleProduct>Banana<Styled.MeasureProduct>Venda por kg</Styled.MeasureProduct></Styled.TitleProduct>
                 
                 <Styled.ContainerListCheckoutProduct>
