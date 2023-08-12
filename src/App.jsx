@@ -3,7 +3,7 @@ import { Layout } from './layout/Layout';
 import { HomePage } from './pages/HomePage/HomePage'
 import { LoginPage } from './pages/LoginPage/LoginPage';
 import { CarrinhoPage } from './pages/CarrinhoPage/CarrinhotPage';
-
+import { CheckoutPage } from './pages/CheckoutPage/CheckoutPage';
 
 function App() {
  
@@ -17,6 +17,7 @@ function App() {
             
             <Route path='/home' element={<HomePage/>}/>
             <Route path='/carrinho' element={<CarrinhoPage/>}/>
+            <Route path='/checkout' element={<CheckoutPage/>}/>
 
         </Route>
         
