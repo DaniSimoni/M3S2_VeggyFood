@@ -33,9 +33,8 @@ export const ButtonCheckout = styled.button`
         opacity: .85;
     }
 `
-Button.propTypes = {
-    $active: PropTypes.bool
-}
+
+
 export const TituloCheckout = styled.h2`
     margin-top: 1rem;
 
