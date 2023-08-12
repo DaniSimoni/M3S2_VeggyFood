@@ -4,6 +4,7 @@ import { HomePage } from './pages/HomePage/HomePage'
 import { LoginPage } from './pages/LoginPage/LoginPage';
 import { CarrinhoPage } from './pages/CarrinhoPage/CarrinhotPage';
 import { CheckoutPage } from './pages/CheckoutPage/CheckoutPage';
+import { ErrorPage } from './pages/ErrorPage/ErrorPage.style';
 
 function App() {
  
@@ -20,7 +21,7 @@ function App() {
             <Route path='/checkout' element={<CheckoutPage/>}/>
 
         </Route>
-        
+            <Route path='/error' element={<ErrorPage/>}/>
       </Routes>
      
     </Router>
