@@ -1,25 +1,17 @@
 import styled from"styled-components";
 
 export const CardContainer = styled.div`
-  margin-left: 20px; 
-  max-width:1000px;
-  height:100%;
-  border: 1px solid black;
-  box-shadow: 0px 4px 4px #3C9B2C;
-  border-radius: 6px;
-    
+  margin-left: 1rem auto; 
+  max-width: 100%;
+  height: auto;   
+  padding: 2rem;
 
 `
 
-
 export const TitleCheckout = styled.h2`
- 
   font-size: 36px;
   font-weight: normal;
-  font-family: 'Almarai';
   padding-left: 30px;
-
-    
 ` 
 
 export const Checkout = styled.div`
@@ -28,6 +20,8 @@ export const Checkout = styled.div`
    align-items: flex-end;
    margin-right:50px;
    line-height: 1px;
+  margin-top: 2rem;
+   height: auto;
 `
 
 export const SubTotal = styled.p`

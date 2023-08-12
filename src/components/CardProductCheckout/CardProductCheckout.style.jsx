@@ -5,9 +5,10 @@ export const CardContainer = styled.div`
   justify-content: left;
   align-self: center;
   max-width: 1000px;
-  height: 100px;
+  height: auto;
   border: 1px solid ;
   margin: 30px;
+  
 `
 
 export const ImageContainer = styled.img`
@@ -16,6 +17,9 @@ export const ImageContainer = styled.img`
    margin-top: 10px;
    max-width: 100px;
    max-height: 80px;
+   width: 5vw;
+   height: 10vh;
+   border: 1px solid red;
 
 
 `
@@ -25,7 +29,7 @@ export const TitleProduct = styled.p`
   font-family: 'Almarai';
   font-weight: 400;
   padding-left: 15px;
-
+  margin-top: 1rem;
 
 `
 
@@ -46,6 +50,7 @@ export const ContainerListCheckoutProduct = styled.div`
 
 
  export const Item = styled.p`
+    margin-top: 1rem;
     margin-left: 100px;   
     font-size: 16px;
     list-style: none;
