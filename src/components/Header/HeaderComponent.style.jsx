@@ -34,6 +34,7 @@ export const ButtonHeader = styled.button`
     font-size: 24px;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
     
 `
 
@@ -56,4 +57,23 @@ export const IconCarrinho = styled.button`
         color: green;
     }
     cursor: pointer;
+   
+`
+export const CartStatus = styled.span `
+    background-color: red;
+    width: 16px;
+    height: 16px;
+    margin-top: 14px;
+    margin-left: -145px;
+    color: white;
+    font-size: 11px;
+    font-weight: 600;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+   
+
 `
