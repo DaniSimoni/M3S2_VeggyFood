@@ -6,21 +6,264 @@
       "password": "12345678"
     }
   ],
-  "posts": [
+  "products": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "name": "banana",
+      "category": "frutas",
+      "price": 4,
+      "amount": 100,
+      "image": "https://i.imgur.com/07xIzNX.png",
+      "description": "1 - Fonte de carboidratos, 2 - Rica em fibras, 3 - Possui vitamina C, vitamina B6, provitamina A, 4 - Rica em minerais como potássio, fósforo, magnésio, zinco, 5 - Fonte de compostos bioativos como: fenólicos, carotenoides, aminas biogênicas e fitoesteróis, que exercem muitos efeitos positivos na saúde humana."
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 2,
+      "name": "Abacate",
+      "category": "frutas",
+      "price": 6,
+      "amount": 300,
+      "image": "https://i.imgur.com/6IpBVo2.png",
+      "description": "1 - Proteção para os olhos, 2 - Melhora de doenças inflamatórias, 3 - Contribui com o controle do colesterol, 4 - Prevenção do envelhecimento precoce, 5 - Ajuda no controle da pressão arterial, 6 - Contribui para prevenção e tratamento de alguns tipos de câncer, 7 - Colabora com o controle do estresse."
+    },
+    {
+      "id": 3,
+      "name": "Melão",
+      "category": "frutas",
+      "price": 5,
+      "amount": 200,
+      "image": "https://i.imgur.com/6ImRFDR.png",
+      "description": "1-Ajuda a reduzir a pressão arterial, 2-Fortalece os ossos, 3-Alivia os sintomas da menopausa, 4-Favorece o sistema imunológico, 5-Melhora a aparência da pele, 6-Auxilia a saúde ocular."
+    },
+    {
+      "id": 4,
+      "name": "Pêssego",
+      "category": "frutas",
+      "price": 8,
+      "amount": 45,
+      "image": "https://i.imgur.com/zPy48w8.png",
+      "description": "1-Ajuda no funcionamento intestinal, 2-Melhora a imunidade, 3-Faz bem para a visão, 4-Melhora a pele, 5-Previne doenças cardiovasculares, Aumenta a sensação de saciedade, 6-É indicado para quem tem diabetes, 7-Faz bem para gestantes."
+    },
+    {
+      "id": 5,
+      "name": "Abacaxi",
+      "category": "frutas",
+      "price": 9,
+      "amount": 23,
+      "image": "https://i.imgur.com/q9y7IsN.png",
+      "description": "1-Previne o desenvolvimento de doenças graves, 2-Combate o estresse e melhora a saúde mental, 3-Fortalece os músculos, 4-Reduz inchaço e contribui para o bom funcionamento do organismo, 5-Imunidade lá no alto, 6-Melhora a digestão."
+    },
+    {
+      "id": 6,
+      "name": "Acelga",
+      "category": "vegetais",
+      "price": 9,
+      "amount": 23,
+      "image": "https://i.imgur.com/1ssUerz.png",
+      "description": "1-Ajuda a regular o açúcar no sangue, 2-Evita doenças cardiovasculares, 3-Fortalece o sistema imunológico, 4-Promove a perda de peso, 5-Mantém a saúde dos olhos, 6-Pode ajudar na prevenção do câncer, 7-Evita a anemia."
+    },
+    {
+      "id": 7,
+      "name": "Alface",
+      "category": "vegetais",
+      "price": 9,
+      "amount": 23,
+      "image": "https://i.imgur.com/UUshl1T.png",
+      "description": "1-É aliado de quem quer emagrecer, 2-Ajuda no sistema imunológico, 3-Faz bem para os olhos, 4-Melhora o funcionamento do intestino, 5-Tem efeito calmante, 6-Ajuda na hidratação, 7-Diminui a pressão arterial."
+    },
+    {
+      "id": 8,
+      "name": "Alecrim",
+      "category": "vegetais",
+      "price": 9,
+      "amount": 23,
+      "image": "https://i.imgur.com/qs8gVNI.png",
+      "description": "1 – Combate à tosse, gripe e asma, 2 – Equilibra a pressão arterial, 3 – Auxilia o tratamento de dores reumáticas e contusões, 4 – É diurético e ajuda a digestão, 5 – Auxilia a menstruação, 6 – Reduz gases intestinais, 7 – Combate o stress."
+    },
+    {
+      "id": 9,
+      "name": "Brócolis",
+      "category": "vegetais",
+      "price": 9,
+      "amount": 23,
+      "image": "https://i.imgur.com/Y21zrF7.png",
+      "description": "1-Diminui inflamações, 2-Ajuda no controle o açúcar no sangue, 3-Faz bem para a saúde cardiovascular, 3-Diminui a prisão de ventre,  4-É indicado para gestantes, 5-Melhora a função cerebral, 6-Combate o envelhecimento, 7-Fortalece ossos."
+    },
+    {
+      "id": 10,
+      "name": "Couve",
+      "category": "vegetais",
+      "price": 9,
+      "amount": 23,
+      "image": "https://i.imgur.com/WAo03Ma.png",
+      "description": "1 - Fortalece o sistema imunológico, 2 - Auxilia no bom funcionamento do intestino, 3 - Previne doenças cardiovasculares, 3-Diminui a prisão de ventre,  4 - Fortalece os ossos, 5 - Ajuda a emagrecer, 6 - Previne o câncer, 7 - Melhora o humor"
+    },
+    {
+      "id": 11,
+      "name": "Couve-flor",
+      "category": "vegetais",
+      "price": 9,
+      "amount": 23,
+      "image": "https://i.imgur.com/EjCOdNw.png",
+      "description": "1. Facilita o emagrecimento, 2. Previne doenças cardiovasculares, 3. Combate e prisão de ventre, 4. Melhora o sono e humor,  5. Mantém a saúde dos ossos, 6. Ajuda a prevenir o câncer, 7. Evita a diabetes."
+    },
+    {
+      "id": 12,
+      "name": "Espinafre",
+      "category": "vegetais",
+      "price": 9,
+      "amount": 23,
+      "image": "https://i.imgur.com/N2fLes2.png",
+      "description": "1 - Evita a prisão de ventre, 2 - Faz bem para os olhos, 3 - Controla a pressão alta, 4 - Previne doenças cardiovasculares, 5 - Combate o envelhecimento precoce, 6 - Faz bem para os ossos, 7 - É indicado para quem tem anemia."
+    },
+    {
+      "id": 13,
+      "name": "Hortelã",
+      "category": "vegetais",
+      "price": 9,
+      "amount": 23,
+      "image": "https://i.imgur.com/JD1azRr.png",
+      "description": "1 - Melhora a digestão, 2 - Alivia a síndrome do intestino irritado, 3 - Ajuda a aliviar sintomas da asma e outros problemas respiratórios, 4 - Ajuda a aliviar sintomas de gripes e resfriados, 5 - Alivia coceira e irritações da pel, 6 - Melhora a saúde bucal, 7 - Alivia a dor."
+    },
+    {
+      "id": 14,
+      "name": "Limão Taiti",
+      "category": "frutas",
+      "price": 9,
+      "amount": 23,
+      "image": "https://i.imgur.com/9yptk8k.png",
+      "description": "1 - Rico em vitamina A, B1, B2, B5 e C, 2 - ainda traz importantes sais minerais ao organismo, como potássio, cálcio, fósforo, sódio e ferro. antioxidante, anti-inflamatória, antiviral, 3 - Ajuda na digestão, combate vermes, 4 - Ajuda no combate ao estresse ansiedade e depressão."
+    },
+    {
+      "id": 15,
+      "name": "Mexerica",
+      "category": "frutas",
+      "price": 9,
+      "amount": 23,
+      "image": "https://i.imgur.com/sG2Fscs.png",
+      "description": "1 - As mexericas são pobres em carboidratos, quando comparadas a outras frutas. 2 - Com poucas calorias, são fontes de fibras, antioxidantes poderosos 3 - E uma dose significativa de vitamina C, A e B6."
+    },
+    {
+      "id": 16,
+      "name": "Morango",
+      "category": "frutas",
+      "price": 9,
+      "amount": 23,
+      "image": "https://i.imgur.com/uAKVztk.png",
+      "description": "1 - rica em vitaminas C, A, E, B5 e B6, 2 - Além disso, ele também é uma fonte de cálcio, potássio, ferro, selênio, magnésio e compostos fenólicos — que são antioxidantes."
+    },
+    {
+      "id": 17,
+      "name": "Ovo branco",
+      "price": 16,
+      "amount": 30,
+      "image": "https://i.imgur.com/Kcns9Bm.png",
+      "description": "1 - Aumentar a massa muscular, 2 - Ajudar na perda de peso, 3 - Fortalecer o sistema imunológico, 4 - Diminuir o colesterol “ruim”, LDL, 5 - Manter a saúde da pele, 6 - Ajudar no combate de anemias, 7 - Fortalecer os ossos, 8 - Manter a saúde mental, 9 - Preservar a saúde dos olhos, 10 - Ajudar a combater a depressão."
+    },
+    {
+      "id": 18,
+      "name": "Ovo vermelho",
+      "price": 16,
+      "amount": 30,
+      "image": "https://i.imgur.com/Rg7JtFM.png",
+      "description": "1 - Aumentar a massa muscular, 2 - Ajudar na perda de peso, 3 - Fortalecer o sistema imunológico, 4 - Diminuir o colesterol “ruim”, LDL, 5 - Manter a saúde da pele, 6 - Ajudar no combate de anemias, 7 - Fortalecer os ossos, 8 - Manter a saúde mental, 9 - Preservar a saúde dos olhos, 10 - Ajudar a combater a depressão."
+    },
+    {
+      "id": 19,
+      "name": "Ovo codorna",
+      "price": 16,
+      "amount": 30,
+      "image": "https://i.imgur.com/Ocm0KNY.png",
+      "description": "1-Cálcio, 2-Fósforo, 3-Enxofre, 4-Potássio, 5-Cloreto, 6-Sódio, 7-Ferro, 8-Magnésio, 9-Manganês, 10-Cobre."
+    },
+    {
+      "id": 20,
+      "name": "Queijo mussarela",
+      "category": "queijos",
+      "price": 16,
+      "amount": 30,
+      "image": "https://i.imgur.com/8dZ7SzN.png",
+      "description": "Mais conhecido como Mussarela, é o preferido de todos! De origem italiana e muito utilizado na culinária, tem uma textura tenra e elástica quando fresco, mas depois de 11 dias de maturação adquire consistência e fica firme. Pode ser consumido frio, puro, em saladas, cozido e é insubstituível na composição de pizzas, além de agregar um valor maravilhoso a massas e recheios."
+    },
+    {
+      "id": 21,
+      "name": "Queijo provolone",
+      "category": "queijos",
+      "price": 16,
+      "amount": 30,
+      "image": "https://i.imgur.com/ZBz5NDw.png",
+      "description": "Ideal para derreter na churrasqueira. Proveniente da Itália, mas muito encontrado nos mercados brasileiros. Tem um sabor levemente defumado e uma consistência mais firme."
+    },
+    {
+      "id": 22,
+      "name": "Queijo gorgonzola",
+      "category": "queijos",
+      "price": 16,
+      "amount": 30,
+      "image": "https://i.imgur.com/02eY75J.png",
+      "description": "Esse queijo tem um sabor intenso e picante. Produzido com leite de vaca, é ótimo para compor saladas de sabor suave, para equilibrá-las. Para quem prefere um sabor mais marcante, pode ser comido picado e puro."
+    },
+    {
+      "id": 23,
+      "name": "Queijo cottage",
+      "category": "queijos",
+      "price": 16,
+      "amount": 30,
+      "image": "https://i.imgur.com/QIMSEy8.png",
+      "description": "É um dos queijos mais consumidos nos Estados Unidos, que tomou conhecimento desse tipo de queijo através da cultura inglesa. Tem consistência granulada e textura heterogênea, granulosa e cremosa. É muito utilizado dietas, por possuir poucas calorias."
+    },
+    {
+      "id": 24,
+      "name": "Queijo ricota",
+      "category": "queijos",
+      "price": 16,
+      "amount": 30,
+      "image": "https://i.imgur.com/drnFjVP.png",
+      "description": "De sabor suave, combina muito bem com sanduíches, quiches ou patês. O queijo tipo ricota é de origem italiana."
+    },
+    {
+      "id": 25,
+      "name": "Mel silvestre",
+      "category": "mel",
+      "price": 16,
+      "amount": 30,
+      "image": "https://i.imgur.com/1lQWca3.png",
+      "description": "Extraído de uma variedade imensa de flores, é o mel mais acessível para comercialização. Seus benefícios giram em torno de todas as funções conhecidas do alimento, como melhora da defesa do corpo, auxílio no tratamento de doenças, melhora da memória, controle da ansiedade e muito mais"
+    },
+    {
+      "id": 26,
+      "name": "Mel de laranja",
+      "category": "mel",
+      "price": 16,
+      "amount": 30,
+      "image": "https://i.imgur.com/eNayjvW.png",
+      "description": "É um mel mais claro, com aroma e coloração mais acentuados, tem propriedades antioxidante, antibacteriana, antisséptica, anti-inflamatória e antibiótica. Ele é higroscópico, ou seja, absorve a umidade do ar."
+    },
+    {
+      "id": 27,
+      "name": "Mel de eucalipto",
+      "category": "mel",
+      "price": 16,
+      "amount": 30,
+      "image": "https://i.imgur.com/VSGO6v0.png",
+      "description": "Num tom mais escuro, ele é rico em minerais e tem como principal benefício auxiliar no alívio da tosse produtiva, facilitando a recuperação de doenças respiratórias."
+    },
+    {
+      "id": 28,
+      "name": "Mel de cipóUva",
+      "category": "mel",
+      "price": 16,
+      "amount": 30,
+      "image": "https://i.imgur.com/tPamhBB.png",
+      "description": "Esse tipo de mel tem coloração transparente e possui um aroma agradável. Um de seus principais benefícios é a melhora da digestão."
+    },
+    {
+      "id": 29,
+      "name": "Mel de jataí",
+      "category": "mel",
+      "price": 16,
+      "amount": 30,
+      "image": "https://i.imgur.com/R2ZlP9P.png",
+      "description": "Mel claro e com um sabor mais ácido. Ele é usado para propriedades medicinais, sobretudo para amenizar os sintomas de gripes, com ação descongestionante."
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
