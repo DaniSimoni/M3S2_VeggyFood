@@ -21,7 +21,7 @@ Label.propTypes = {
 
 export const Input = styled.input`
     width: 100%;
-    padding: 0.8125rem 15.1875rem 1.1875rem 0.75rem;
+    padding: 1.2rem 1.5rem;
     border-radius: 0.9375rem;
     font-size: .8rem;
     border: 1px solid ${({$hasError}) => {return $hasError ? '#EE0808' : '#D9D9D9'}};
@@ -44,7 +44,7 @@ export const InputContainer = styled.div`
 `
 export const Icon = styled.button`
     position: absolute;
-    top: 1rem;
+    top: 1.2rem;
     right: 1.2rem;
     background: transparent;
     border: 0;

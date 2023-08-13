@@ -1,4 +1,11 @@
 {
+  "users": [
+    {
+      "id": 1,
+      "email": "administrador@veggyfood.com",
+      "password": "12345678"
+    }
+  ],
   "posts": [
     {
       "id": 1,

@@ -1,6 +1,6 @@
 import { FormLoginComponent } from '../../components/Form/FormLogin/FormLoginComponent.jsx';
 import * as Styled from './LoginPage.style.jsx';
-import { useContext, useEffect } from 'react';
+import  LogoLogin  from '../../../public/images/LogoLogin.svg'
 
 
 export const LoginPage = () => {
@@ -9,8 +9,8 @@ export const LoginPage = () => {
         <Styled.LoginPageContainer>
             <Styled.LoginCard>
                 <Styled.ImageBox>
-                    
-                </Styled.ImageBox>
+                   <img src={LogoLogin}></img>
+                </Styled.ImageBox >
 
                 <FormLoginComponent />
             </Styled.LoginCard>
