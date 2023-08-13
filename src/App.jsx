@@ -26,7 +26,7 @@ function App() {
             <Route path='/efetuada' element={<ConfirmaCompraPage/>}/>
 
         </Route>
-            <Route path='/error' element={<ErrorPage/>}/>
+            <Route path='*' element={<ErrorPage/>}/>
       </Routes>
      
     </Router>
