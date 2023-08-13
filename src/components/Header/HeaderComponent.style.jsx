@@ -55,4 +55,5 @@ export const IconCarrinho = styled.button`
         font-size: 2rem;
         color: green;
     }
+    cursor: pointer;
 `

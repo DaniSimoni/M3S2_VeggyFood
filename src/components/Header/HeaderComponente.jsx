@@ -7,7 +7,7 @@ import Logo from '../../../public/images/Logo.png'
 import { useNavigate } from 'react-router-dom';
 /* import IconLogin from '../../../public/images/IconLogin.png' */
 
-import { MdShoppingCart } from "react-icons/md";
+import { BsCart4 } from "react-icons/bs";
 
 
 
@@ -33,7 +33,7 @@ export const HeaderComponent = () => {
 
                 <Styled.ButtonHeader>Contato</Styled.ButtonHeader>
 
-                <Styled.IconCarrinho><MdShoppingCart/></Styled.IconCarrinho>
+                <Styled.IconCarrinho><BsCart4/></Styled.IconCarrinho>
 
                 <Styled.ButtonHeader id='buttonHeader' onClick={handleLogin}>
                     {data.buttonHeader}
