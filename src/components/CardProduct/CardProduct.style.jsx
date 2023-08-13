@@ -16,10 +16,6 @@ export const CardContainer = styled.div`
     box-shadow: 0px 2px 10px rgba(0,0,0,0.5);
   }
 
-  &:last-child {
-    margin-bottom: 1.2rem;
-  }
-
 `
 
 export const CardImage = styled.img`
