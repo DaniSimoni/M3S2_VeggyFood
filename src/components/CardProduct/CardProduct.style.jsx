@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { COLORS } from '../../utils/styles/style'
 
 
 export const CardContainer = styled.div`
@@ -27,21 +28,21 @@ export const CardImage = styled.img`
 `
 
 export const CardText = styled.div`
-  background-color: #BEE7CC;
+  background-color: ${COLORS.$secondary};
   border-radius: 0 0 10px 10px;
   padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 12.5rem;
-  font-family: Almarai
+  font-family: Almarai;
 `
 
 export const ProductTitle = styled.p`
    font-size: 20px;
    font-style: normal;
    font-family: Almarai;
-   color: #0B4802;
+   color: ${COLORS.$textPrimary};
 
 `
 
@@ -49,7 +50,7 @@ export const ProductText = styled.p`
    font-size: 10px;
    font-style: normal;
    font-family: Almarai;
-   color: #3E3C3C;
+   color: ${COLORS.$textSecondary};
    font-size: 12px;
    text-align: justify;
 

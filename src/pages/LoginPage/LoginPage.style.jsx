@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { COLORS } from '../../utils/styles/style';
 
 export const LoginPageContainer = styled.div`
     height: 100%;
@@ -11,7 +12,7 @@ export const LoginCard = styled.div`
     width: 80%;
     height: 85vh;
     display: flex;
-    box-shadow: 0px 0px 10px 0px #3C9B2C;
+    box-shadow: 0px 0px 10px 0px ${COLORS.$primary};
 `;
 
 export const ImageBox = styled.div`
@@ -20,7 +21,7 @@ export const ImageBox = styled.div`
     justify-content: center;
     align-items: center;
     box-shadow: 0px 0px 10px 0px #3c9b2e;
-    background-color: #8FBC8F;
+    background-color: ${COLORS.$softGreen};
     
 
     img {

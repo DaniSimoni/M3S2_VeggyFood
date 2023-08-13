@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { COLORS } from '../../utils/styles/style';
 
 export const SearchBar = styled.form`
     display: flex;
@@ -6,7 +7,7 @@ export const SearchBar = styled.form`
     align-items: center;
     width: 100%;
     height: 20%;
-    background-color: #407345;
+    background-color: ${COLORS.$darkGreen};
 
 `;
 
@@ -25,14 +26,14 @@ export const InputContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding-right: .3rem;
-    background-color: white;
-    box-shadow: 0 4px 4px 0 #3E3C3C;
+    background-color: ${COLORS.$white};
+    box-shadow: 0 4px 4px 0 ${COLORS.$textSecondary};
 `;
 
 export const Label = styled.label`
     font-size: 1.2rem;
     font-weight: 600;
-    color: #D9D9D9;
+    color: ${COLORS.$softGray};
     margin-bottom: 1rem;
     font-family: Almarai;
 `
@@ -42,22 +43,22 @@ export const Input = styled.input`
     padding: 1.2rem 1.5rem;
     font-size: .8rem;
     border: none;
-    border-right: 1px solid #D9D9D9;
+    border-right: 1px solid ${COLORS.$softGray};
 
     &::placeholder {
-        color: #3E3C3C;
+        color: ${COLORS.$textSecondary};
         font-family: Almarai;
     }
 `
 
 export const ButtonSearch = styled.button`
-    background-color: white;
+    background-color: ${COLORS.$white};
     border: none;
     padding: .35rem .35rem;
     font-size: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #3C9B2C;
+    color: ${COLORS.$textPrimary};
     cursor: pointer;
 `;

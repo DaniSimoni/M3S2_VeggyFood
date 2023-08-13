@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { COLORS } from '../../utils/styles/style'
 
 export const HeaderContainer = styled.div`
     width: 100vw;
@@ -54,19 +55,19 @@ export const IconCarrinho = styled.button`
     height: 5vw;
     svg{
         font-size: 2rem;
-        color: green;
+        color: ${COLORS.$green};
         position: relative;
     }
     cursor: pointer;
    
 `
 export const CartStatus = styled.span `
-    background-color: red;
+    background-color: ${COLORS.$danger};
     width: 16px;
     height: 16px;
     margin-top: -6vh;
     margin-left: 1vw;
-    color: white;
+    color: ${COLORS.$white};
     font-size: 11px;
     font-weight: 600;
     border-radius: 15px;

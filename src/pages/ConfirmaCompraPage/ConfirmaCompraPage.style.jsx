@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import { COLORS } from '../../utils/styles/style';
 
 export const ContainerCheckout = styled.div`
     width: 70vw;
@@ -17,7 +17,7 @@ export const TituloCheckout = styled.h3`
 `
 export const AgradecimentoCheckout = styled.h1`
     margin-top: 1rem;
-    color: #000000;
+    color: ${COLORS.$black};
     font-size: 1.7rem;
     margin-top: -47%;
     margin-left: -25%;
@@ -26,7 +26,7 @@ export const AgradecimentoCheckout = styled.h1`
 
 export const ParagrafoCheckout = styled.p`
     margin-top: 1rem;
-    color: #0B4802;
+    color: ${COLORS.$textPrimary};
     font-size: 1.2rem;
     font-family: Almarai;
     margin-top: 2rem;
@@ -43,7 +43,7 @@ export const ContainerImagem = styled.img`
 
 export const MensagemCheckout = styled.p`
     margin-top: 1rem;
-    color: #0B4802;
+    color: ${COLORS.$textPrimary};
     font-size: 1rem;
     margin-top: 25%;
     margin-left: -22%;

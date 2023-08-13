@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { COLORS } from '../../utils/styles/style';
 
 
 export const ContainerCheckout = styled.div`
@@ -18,12 +19,12 @@ export const ButtonCheckout = styled.button`
     background-color: #3C9B2C;
     margin-top: 2rem;
     border-radius: 1rem;
-    color: white;
+    color: ${COLORS.$white};
     font-size: 2rem;
     cursor: pointer;    
     font-family: Almarai;
     font-size: 30px;
-    background-color: #3C9B2C;
+    background-color: ${COLORS.$primary};
     opacity: ${({ $active }) => {return $active ? 1 : .5 }};
     
     &:disabled {

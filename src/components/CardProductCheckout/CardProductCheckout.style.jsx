@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { COLORS } from '../../utils/styles/style';
 
 export const CardContainer = styled.div`
   display: flex;
@@ -19,7 +20,7 @@ export const ImageContainer = styled.img`
    max-height: 80px;
    width: 5vw;
    height: 10vh;
-   border: 1px solid red;
+   border: 1px solid ${COLORS.$danger};
 
 
 `
@@ -61,14 +62,14 @@ export const ContainerListCheckoutProduct = styled.div`
  export const Price = styled.p`
   font-size:20px;
   font-weight: bold;
-  color: #3C9B2C;
+  color: ${COLORS.$primary};
 
 
  `
 
  export const Icon = styled.div`
   font-size: 40px;
-  color: red;
+  color: ${COLORS.$danger};
   
 
  `

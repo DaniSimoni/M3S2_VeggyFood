@@ -1,4 +1,5 @@
 import styled from"styled-components";
+import { COLORS } from "../../utils/styles/style";
 
 export const CardContainer = styled.div`
   margin-left: 1rem auto; 
@@ -39,7 +40,7 @@ export const Value = styled.span`
 `
 export const Total = styled.p`
   font-size: 24px;
-  color:#3C9B2C;
+  color:${COLORS.$primary};
   font-family: Almarai;
   font-weight: bold;
 `
@@ -51,8 +52,8 @@ export const Button = styled.button`
  font-size: 20px;
  font-weight: bold;
  font-family: 'Inter' sans serif;
- background-color: #3C9B2C;
- color: #FFFFFF;
+ background-color: ${COLORS.$primary};
+ color: ${COLORS.$white};
  margin-bottom: 10px;
  cursor: pointer;
 
