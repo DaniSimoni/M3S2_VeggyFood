@@ -2,10 +2,10 @@ import * as Styled from './HomePage.style';
 import { useContext, useEffect } from 'react';
 import { Navigate } from 'react-router-dom';
 import { HeaderContext } from '../../context/HeaderContext/Header.context';
-import { CardProduct } from './../../components/CardProduct/CardProduct.component';
 import { useAuth } from '../../hooks/Auth/useAuth';
 import { LocalStorageService } from '../../services/LocalStorage.service';
 import { SearchComponent } from '../../components/Search/SearchComponent';
+import { ProdutosComponent } from '../../components/Produtos/ProdutosComponent';
 
 
 
@@ -38,11 +38,7 @@ export const HomePage = () => {
   
           <Styled.CardProdutoAreaHome>
               
-              <CardProduct/>
-              <CardProduct/>
-              <CardProduct/>
-              <CardProduct/>
-              <CardProduct/>
+            <ProdutosComponent />
   
           </Styled.CardProdutoAreaHome>
   
