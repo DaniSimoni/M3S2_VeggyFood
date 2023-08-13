@@ -16,6 +16,11 @@ export const BodyHome = styled.div`
 export const TituloBanner = styled.h1`
     color: white;
     margin: auto auto auto 5vw;
+    font-family: Chewy;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 `
 
 export const BannerArea = styled.div`
@@ -40,6 +45,7 @@ export const SubTitulo = styled.h3`
     display: flex;
     flex-wrap: wrap;
     margin: 2rem 0 2rem 10vw;
+    font-family: Almarai;
 `
 
 export const CardProdutoAreaHome = styled.div`

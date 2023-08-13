@@ -34,9 +34,9 @@ export const HeaderComponent = () => {
                 <Styled.ButtonHeader>Contato</Styled.ButtonHeader>
 
                 <Styled.IconCarrinho><BsCart4/>
-                
-                </Styled.IconCarrinho>
                 <Styled.CartStatus>1</Styled.CartStatus>
+                </Styled.IconCarrinho>
+                
                 
 
                 <Styled.ButtonHeader id='buttonHeader' onClick={handleLogin}>

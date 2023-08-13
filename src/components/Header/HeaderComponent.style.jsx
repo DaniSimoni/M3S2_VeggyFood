@@ -55,6 +55,7 @@ export const IconCarrinho = styled.button`
     svg{
         font-size: 2rem;
         color: green;
+        position: relative;
     }
     cursor: pointer;
    
@@ -63,8 +64,8 @@ export const CartStatus = styled.span `
     background-color: red;
     width: 16px;
     height: 16px;
-    margin-top: 14px;
-    margin-left: -145px;
+    margin-top: -6vh;
+    margin-left: 1vw;
     color: white;
     font-size: 11px;
     font-weight: 600;
@@ -73,7 +74,7 @@ export const CartStatus = styled.span `
     align-items: center;
     justify-content: center;
     flex-direction: row;
-
+    position: absolute;
    
 
 `

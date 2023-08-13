@@ -34,6 +34,7 @@ export const Label = styled.label`
     font-weight: 600;
     color: #D9D9D9;
     margin-bottom: 1rem;
+    font-family: Almarai;
 `
 
 export const Input = styled.input`
@@ -45,6 +46,7 @@ export const Input = styled.input`
 
     &::placeholder {
         color: #3E3C3C;
+        font-family: Almarai;
     }
 `
 

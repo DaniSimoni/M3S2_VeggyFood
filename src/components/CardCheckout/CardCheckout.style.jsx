@@ -11,6 +11,7 @@ export const CardContainer = styled.div`
 export const TitleCheckout = styled.h2`
   font-size: 36px;
   font-weight: normal;
+  font-family: Almarai;
   padding-left: 30px;
 ` 
 
@@ -26,17 +27,20 @@ export const Checkout = styled.div`
 
 export const SubTotal = styled.p`
 font-size: 24px;
+font-family:Almarai;
   
 `
 export const Value = styled.span`
   font-size: 24px;
   font-weight: bold;
+  font-family: Almarai;
   color: #F41313;
   
 `
 export const Total = styled.p`
   font-size: 24px;
   color:#3C9B2C;
+  font-family: Almarai;
   font-weight: bold;
 `
 export const Button = styled.button`
@@ -46,7 +50,7 @@ export const Button = styled.button`
  border: none;
  font-size: 20px;
  font-weight: bold;
- font-family: 'Inter';
+ font-family: 'Inter' sans serif;
  background-color: #3C9B2C;
  color: #FFFFFF;
  margin-bottom: 10px;

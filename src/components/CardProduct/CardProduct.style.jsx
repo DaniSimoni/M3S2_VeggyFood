@@ -34,12 +34,13 @@ export const CardText = styled.div`
   flex-direction: column;
   justify-content: space-between;
   height: 12.5rem;
+  font-family: Almarai
 `
 
 export const ProductTitle = styled.p`
    font-size: 20px;
    font-style: normal;
-   font-family: 'Almarai';
+   font-family: Almarai;
    color: #0B4802;
 
 `
@@ -47,7 +48,7 @@ export const ProductTitle = styled.p`
 export const ProductText = styled.p`
    font-size: 10px;
    font-style: normal;
-   font-family: 'Almarai';
+   font-family: Almarai;
    color: #3E3C3C;
    font-size: 12px;
    text-align: justify;
