@@ -6,15 +6,17 @@ import { CarrinhoPage } from './pages/CarrinhoPage/CarrinhotPage';
 import { CheckoutPage } from './pages/CheckoutPage/CheckoutPage';
 import { ErrorPage } from './pages/ErrorPage/ErrorPage';
 import { ConfirmaCompraPage } from './pages/ConfirmaCompraPage/ConfirmaCompraPage';
+import { ShoppingCartProvider } from './context/Cart/ShoppingCart.context';
 
 
 function App() {
  
 
   return (
-    <Router>
-      <Routes>
-            <Route path='/' element={<LoginPage/>}/>
+    <ShoppingCartProvider>
+      <Router>
+        <Routes>
+              <Route path='/' element={<LoginPage/>}/>
 
         <Route path='/' element={<Layout/>} >
             
@@ -28,6 +30,7 @@ function App() {
       </Routes>
      
     </Router>
+    </ShoppingCartProvider>
   )
 }
 
