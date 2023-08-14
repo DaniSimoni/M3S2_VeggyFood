@@ -8,7 +8,7 @@ import * as Styled from './InputComponent.style';
 
 export const InputComponent = ({ label, type, id, placeholder, register, error, onChange }) => {
 
-    const [showPassword, setShowPassword] = useState();
+    const [showPassword, setShowPassword] = useState(false);
 
     const handleShowPassword = () => {
         setShowPassword(!showPassword);
@@ -22,20 +22,20 @@ export const InputComponent = ({ label, type, id, placeholder, register, error, 
 
     return (
         <Styled.InputBox>
-            <Styled.Label $hasError={error} htmlFor={id}>{ label }</Styled.Label>
+            <Styled.Label $hasError={!!error} htmlFor={id}>{ label }</Styled.Label>
             { type !== 'textarea' && 
                 <Styled.InputContainer>
-                    <Styled.Input $hasError={error} type={type} id={id} placeholder={placeholder} {...register} onChange={handleChange} />
+                    <Styled.Input $hasError={!!error} type={ showPassword ? 'text' : type } id={id} placeholder={placeholder} {...register} onChange={handleChange} />
                     
                     { type === 'password' &&
-                        <Styled.Icon $hasError={error} type="button" onClick={handleShowPassword} >
+                        <Styled.Icon $hasError={!!error} type="button" onClick={handleShowPassword} >
                             { !showPassword
                                 ? <MdVisibility />
                                 : <MdVisibilityOff />
                             }
                         </Styled.Icon>
-
                     }
+                    { error && <Styled.Error>{error.message}</Styled.Error> }
                 </Styled.InputContainer>
             }
             

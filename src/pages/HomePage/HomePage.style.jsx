@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import { COLORS } from '../../utils/styles/style';
 
 export const BodyHome = styled.div`
     display: flex;
@@ -9,13 +9,18 @@ export const BodyHome = styled.div`
     box-sizing: border-box;
     margin-top: -10vh;
     padding: 0;
-    background-color: white;
+    background-color: ${COLORS.$white};
 `
 
 
 export const TituloBanner = styled.h1`
-    color: white;
+    color: ${COLORS.$white};
     margin: auto auto auto 5vw;
+    font-family: Chewy;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 `
 
 export const BannerArea = styled.div`
@@ -23,7 +28,7 @@ export const BannerArea = styled.div`
     flex-wrap: wrap;
     width: 100%;
     height: 40vh;
-    background-color: #407345;
+    background-color: ${COLORS.$darkGreen};
 
 `
 
@@ -35,18 +40,12 @@ export const BannerImg = styled.img`
 	top: -0px;
 `
 
-export const InputAreaHome = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    width: 100vw;
-    height: 20vh;
-    background-color: #407345;
-`
 
 export const SubTitulo = styled.h3`
     display: flex;
     flex-wrap: wrap;
     margin: 2rem 0 2rem 10vw;
+    font-family: Almarai;
 `
 
 export const CardProdutoAreaHome = styled.div`
@@ -55,6 +54,6 @@ export const CardProdutoAreaHome = styled.div`
     justify-content: space-between;    
     width: 85%;
     height: auto;
-    background-color: white;
+    background-color: ${COLORS.$white};
     margin: 0 auto; 
 `
