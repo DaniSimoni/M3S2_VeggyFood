@@ -1,13 +1,21 @@
+import { useShoppingCart } from '../../hooks/Shop/useShoppingCart';
 import { formatCurrency } from '../../utils/format/formatCurrency';
 import * as Styled from './CardProduct.style';
 import PropTypes from 'prop-types';
 
 export const CardProduct = ({ data }) => {
-    const { name, image, price, description } = data
+    const { name, image, price, description } = data;
+
+    const { cartItems, setCartItems } = useShoppingCart();
+
+    const handleAddCart = () => {
+        setCartItems([ ...cartItems, data ]);
+    }
+
     return (
         <>
 
-            <Styled.CardContainer>
+            <Styled.CardContainer onClick={handleAddCart}>
                 <Styled.CardImage src={image} />
                 <Styled.CardText>
                     <Styled.ProductTitle>{name}</Styled.ProductTitle>
