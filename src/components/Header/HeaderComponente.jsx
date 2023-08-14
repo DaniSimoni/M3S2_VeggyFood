@@ -33,13 +33,8 @@ const { data } = useContext(HeaderContext)
                 <Styled.CartStatus>1</Styled.CartStatus>
                 </Styled.IconCarrinho>
                 
-                
-                
-                
                  <Styled.ButtonHeader id='buttonHeader'>
                     {data.buttonHeader} 
-                
-                    
                 
                 </Styled.ButtonHeader>
                  <DropdownComponent options={dropdownOptions}/>
