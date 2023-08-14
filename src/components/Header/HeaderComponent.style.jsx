@@ -39,6 +39,7 @@ export const ButtonHeader = styled.button`
     
 `
 
+
 export const SectionButtonHeader = styled.section`
     display: flex;
     width: 45vw;
