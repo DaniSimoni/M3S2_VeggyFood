@@ -1,26 +1,22 @@
 import * as Styled from './HeaderComponent.style'
-
 import { useContext } from 'react';
 import { HeaderContext } from '../../context/HeaderContext/Header.context';
 
+
 import Logo from '../../../public/images/Logo.png'
-import { useNavigate } from 'react-router-dom';
+
 /* import IconLogin from '../../../public/images/IconLogin.png' */
 
-import { MdShoppingCart } from "react-icons/md";
+import { BsCart4 } from "react-icons/bs";
+
+import  { DropdownComponent } from '../Dropdown/Dropdown.component';
 
 
 
 export const HeaderComponent = () => {
-
-    const { data } = useContext(HeaderContext)
-
-    const navigate = useNavigate();
-
-    const handleLogin = () => {
-        navigate('/')
-    }
-
+const dropdownOptions = ['Sair']
+    
+const { data } = useContext(HeaderContext)
     return(
         <Styled.HeaderContainer>
             <Styled.LogoImg src={Logo}></Styled.LogoImg>
@@ -33,14 +29,15 @@ export const HeaderComponent = () => {
 
                 <Styled.ButtonHeader>Contato</Styled.ButtonHeader>
 
-                <Styled.IconCarrinho><MdShoppingCart/></Styled.IconCarrinho>
-
-                <Styled.ButtonHeader id='buttonHeader' onClick={handleLogin}>
-                    {data.buttonHeader}
+                <Styled.IconCarrinho><BsCart4/>
+                <Styled.CartStatus>1</Styled.CartStatus>
+                </Styled.IconCarrinho>
                 
-                    <Styled.IconHeader id='iconHeader' src={data.iconHeader}/> 
+                 <Styled.ButtonHeader id='buttonHeader'>
+                    {data.buttonHeader} 
                 
                 </Styled.ButtonHeader>
+                 <DropdownComponent options={dropdownOptions}/>
 
             </Styled.SectionButtonHeader>
             

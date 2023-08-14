@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import { COLORS } from '../../../utils/styles/style';
 
 export const Form = styled.form`
     width: 50%;
@@ -26,7 +27,7 @@ export const FormHeader = styled.legend`
         display: block;
         width: 5rem;
         height: .3rem;
-        background-color: #3C9B2C;
+        background-color: ${COLORS.$primary};
         margin: 0 auto;
         position: absolute;
         border-radius: 10px;
@@ -52,7 +53,7 @@ export const Button = styled.button`
     font-weight: 500;
     color: #fff;
     
-    background-color: #3C9B2C;
+    background-color: ${COLORS.$primary};
     opacity: ${({ $active }) => {return $active ? 1 : .5 }};
     
     &:disabled {
@@ -78,6 +79,6 @@ export const LinkBox = styled.div`
 
 export const CriarConta = styled.a`
     text-decoration: none;
-    color: #3C9B2C;
+    color: ${COLORS.$primary};
     cursor: pointer;
 `

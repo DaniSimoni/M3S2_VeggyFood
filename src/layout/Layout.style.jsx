@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { COLORS } from '../utils/styles/style';
 
 export const App = styled.div`
     display: flex;
@@ -9,7 +10,7 @@ export const App = styled.div`
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: white;
+    background-color: ${COLORS.$white};
 
 
 `
@@ -18,7 +19,7 @@ export const HeaderLayout = styled.div`
     width: 100vw;
     height: 30vh;
     justify-content: center;
-    background-color: white;
+    background-color: ${COLORS.$white};
 
 `
 
@@ -26,7 +27,7 @@ export const MainLayout = styled.div`
     width: 100%;
     height: 100vh;
     display: flex;
-    background-color: white;
+    background-color: ${COLORS.$white};
     box-sizing: border-box;
     margin: 0;
     padding: 0;

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-
+import { COLORS } from '../../utils/styles/style';
 export const InputBox = styled.div`
     display: flex;
     flex-direction: column;
@@ -12,7 +12,7 @@ export const InputBox = styled.div`
 export const Label = styled.label`
     font-size: 1.2rem;
     font-weight: 600;
-    color: ${({$hasError}) => $hasError ? '#EE0808' : '#D9D9D9'};
+    color: ${({$hasError}) => $hasError ? `${COLORS.$darkRed}` : `${COLORS.$softGray}`};
     margin-bottom: 1rem;
 `
 Label.propTypes = {
@@ -24,14 +24,14 @@ export const Input = styled.input`
     padding: 1.2rem 1.5rem;
     border-radius: 0.9375rem;
     font-size: .8rem;
-    border: 1px solid ${({$hasError}) => {return $hasError ? '#EE0808' : '#D9D9D9'}};
+    border: 1px solid ${({$hasError}) => {return $hasError ? `${COLORS.$darkRed}` : `${COLORS.$softGray}`}};
 
     &::placeholder{
-        color: ${({$hasError}) => $hasError ? '#EE0808' : 'rgba(0, 0, 0, 0.40);'};
+        color: ${({$hasError}) => $hasError ? `${COLORS.$darkRed}` : 'rgba(0, 0, 0, 0.40);'};
     }
 
     &:hover {
-        background-color: #f2f2f2;
+        background-color: ${COLORS.$ligthGray};
     }
 `
 Input.propTypes = {
@@ -56,7 +56,7 @@ export const Icon = styled.button`
     justify-content: center;
 
     font-size: 1.3rem;
-    color: ${({$hasError}) => {return $hasError ? '#EE0808' : '#3C9B2C'}};
+    color: ${({$hasError}) => {return $hasError ? `${COLORS.$darkRed}` : `${COLORS.$primary}`}};
 `
 Icon.propTypes = {
     $hasError: PropTypes.bool
@@ -64,5 +64,5 @@ Icon.propTypes = {
 
 export const Error = styled.p`
     font-size: .8rem;
-    color: #EE0808;
+    color: ${COLORS.$danger};
 `

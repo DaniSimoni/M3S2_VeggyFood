@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import { COLORS } from '../../utils/styles/style';
+
 
 export const ContainerCheckout = styled.div`
     width: 70vw;
@@ -18,11 +19,12 @@ export const ButtonCheckout = styled.button`
     background-color: #3C9B2C;
     margin-top: 2rem;
     border-radius: 1rem;
-    color: white;
+    color: ${COLORS.$white};
     font-size: 2rem;
     cursor: pointer;    
-
-    background-color: #3C9B2C;
+    font-family: Almarai;
+    font-size: 30px;
+    background-color: ${COLORS.$primary};
     opacity: ${({ $active }) => {return $active ? 1 : .5 }};
     
     &:disabled {
@@ -37,5 +39,5 @@ export const ButtonCheckout = styled.button`
 
 export const TituloCheckout = styled.h2`
     margin-top: 1rem;
-
+    font-family: Almarai;
 `

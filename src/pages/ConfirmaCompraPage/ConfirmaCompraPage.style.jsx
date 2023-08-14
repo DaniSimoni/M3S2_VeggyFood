@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import { COLORS } from '../../utils/styles/style';
 
 export const ContainerCheckout = styled.div`
     width: 70vw;
@@ -12,20 +12,23 @@ export const ContainerCheckout = styled.div`
 `
 
 export const TituloCheckout = styled.h3`
-    
+    font-family: Almarai;
+    font-size: 36px;
 `
 export const AgradecimentoCheckout = styled.h1`
     margin-top: 1rem;
-    color: #000000;
-    font-size: 1.2rem;
+    color: ${COLORS.$black};
+    font-size: 1.7rem;
     margin-top: -47%;
     margin-left: -25%;
+    font-family: Chewy;
 `
 
 export const ParagrafoCheckout = styled.p`
     margin-top: 1rem;
-    color: #0B4802;
+    color: ${COLORS.$textPrimary};
     font-size: 1.2rem;
+    font-family: Almarai;
     margin-top: 2rem;
 `
 
@@ -40,8 +43,10 @@ export const ContainerImagem = styled.img`
 
 export const MensagemCheckout = styled.p`
     margin-top: 1rem;
-    color: #0B4802;
+    color: ${COLORS.$textPrimary};
     font-size: 1rem;
     margin-top: 25%;
     margin-left: -22%;
+    font-family: Almarai;
+
 `
