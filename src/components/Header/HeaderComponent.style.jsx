@@ -11,6 +11,7 @@ export const LogoImg = styled.img`
 	position: absolute;
 	left: -260px;
 	top: -360px;
+    cursor: pointer;
 `
 
 export const IconHeader = styled.img`

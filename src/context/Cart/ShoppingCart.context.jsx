@@ -6,10 +6,13 @@ export const ShoppingCartContext = createContext();
 export const ShoppingCartProvider = ({ children }) => {
 
     const [produtos, setProdutos] = useState([]);
+    const [cartItems, setCartItems] = useState([]);
 
     const value = {
         produtos, 
         setProdutos,
+        cartItems, 
+        setCartItems,
     };
 
     return(
